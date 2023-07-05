@@ -1,3 +1,5 @@
+// Arrays are Mutable, i.e., can be changed.
+
 const arr = [11, 32, 23, 34, 45, 66, 71, 86, 19];
 console.log(arr);
 console.log(arr.length);

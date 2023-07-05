@@ -43,3 +43,13 @@ function multi(a, b){
     return a*b;
 }
 
+//modern way of making a function in Js.
+
+const hello = (num1, num2) => {
+    console.log("Hello, This is the New Way of making Function in Js.");
+    console.log("The sum is: ", num1+num2);
+    return num1+num2;
+    
+}
+
+console.log(hello(2, 8)); // function calling

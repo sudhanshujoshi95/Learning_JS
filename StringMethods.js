@@ -10,3 +10,6 @@ console.log(str.substring(27, 38)); //same as SLICE, but It can't take the -ve a
 console.log(str.concat(newstr).toUpperCase()); //Concatenated two Strings, and make them Display as UPPERCASE, by using .toUpperCase() method.
 console.log(str.toLowerCase());  // .toLowerCase() method to make the String Display as LowerCase.
 console.log(str.concat(newstr).toUpperCase().replace('SUDHANSHU', 'Pawan')); //Just, Replaced 'SUDHANSHU' with 'Pawan'.
+
+let var1 = '    pawan   ';
+console.log(var1.trim());  // deletes the spaces.
