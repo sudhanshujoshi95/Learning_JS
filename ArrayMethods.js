@@ -24,3 +24,4 @@ console.log(arr);
 
 
 console.log(arr.toString()); //converts the Array obj. to String.
+console.log(Array.isArray(arr));
