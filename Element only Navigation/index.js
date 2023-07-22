@@ -23,3 +23,17 @@ document.querySelector(".list").style.color = "red";
 
 // document.getElementsByTagName("a");
 // document.getElementsByName("Search"); --> input type = "Search" Name = "Search"  
+
+// Three more Imp. Methods to Search DOM:
+// 1. elem.matches --> To check if element matches the given css selector.
+// 2. elem.closest --> To look for the nearest ancestor that matches the given css-selector. The element
+//                                                                itself is also checked.
+
+let list2 = document.getElementById("list-2");
+let p1 = document.getElementById("p-1");
+let container1 = document.getElementById("container-1");
+
+console.log(list2.matches(".list"));
+console.log(p1.closest(".container"));
+console.log(container1.contains("p1"));
+console.log(p1.contains(container1));
