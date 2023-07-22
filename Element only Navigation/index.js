@@ -11,3 +11,15 @@ Certain DOM elements may provide Additional properties specific to their type fo
 
 Table element, is one of the good example of such an element which provides additional properties.
 */
+
+// DOM Searching
+
+// let li_font = document.getElementsByClassName("list")[0];
+// li_font.style.color = "red";
+
+// document.getElementById("container-1").style.color = "yellow";
+
+document.querySelector(".list").style.color = "red";
+
+// document.getElementsByTagName("a");
+// document.getElementsByName("Search"); --> input type = "Search" Name = "Search"  
