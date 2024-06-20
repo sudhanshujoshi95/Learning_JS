@@ -53,3 +53,38 @@ const hello = (num1, num2) => {
 }
 
 console.log(hello(2, 8)); // function calling
+
+//higher-order functions[Custom higher-order function]:-
+
+let uppercase = function(str){
+    return str.toUpperCase();
+}
+
+let lowercase = function(str){
+    return str.toLowerCase();
+}
+
+let transformer = function(str, fun){
+    return fun(str);
+}
+
+console.log(transformer("abcdefgh", uppercase))
+console.log(transformer("BDSHCBHB bshcbh BJBBuj bJBJSJ", lowercase))
+
+
+// built-in higher order functions:- map, filter, reduce.
+
+//map:-
+const num = [1, 2, 3, 4];
+const doubled = num.map(x => x * 2);
+console.log(doubled); // [2, 4, 6, 8]
+
+//filter:-
+const nums = [1, 2, 3, 4];
+const even = nums.filter(x => x%2 === 0);
+console.log(even);
+
+//reduce:-
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum); // 10
